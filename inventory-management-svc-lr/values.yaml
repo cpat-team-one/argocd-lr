@@ -1,0 +1,11 @@
+global:
+  ingressSubdomain: http://artifactory.mooc-one-rhos-cluster.us-east.containers.appdomain.cloud/artifactory/generic-local/mooc-team-one/
+  tlsSecretName: mooc-one-rhos-cluster
+
+inventory-management-svc-lr:
+  replicaCount: 3
+  
+  ingress:
+    enabled: true
+    tlsSecretName: mooc-one-rhos-cluster
+
