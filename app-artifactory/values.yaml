@@ -1,11 +1,11 @@
 global:
-  ingressSubdomain: <dev-cluster-name>.us-south.containers.appdomain.cloud
-  tlsSecretName: <dev-cluster-name>
+  ingressSubdomain: mooc-one-rhos-cluster.us-south.containers.appdomain.cloud
+  tlsSecretName: mooc-one-rhos-cluster
 
-<app-chart-name>:
+inventory-management-svc-lr:
   replicaCount: 3
   
   ingress:
     enabled: true
-    tlsSecretName: <dev-cluster-name>
+    tlsSecretName: mooc-one-rhos-cluster
 
